@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>星月_Fox - 个人主页</title>
+    <title>星月Fox的小窝</title>
     <!-- 网页图标，使用用户头像并确保是圆形的 -->
 
     <link
@@ -240,9 +240,9 @@
         }
         /* 云母效果和边框光效 */
         .glass-panel {
-          background: rgba(255, 255, 255, 0.6);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
+          background: rgba(255, 255, 255, 0.75);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
           border: 1px solid rgba(255, 255, 255, 0.3);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
           position: relative;
@@ -255,8 +255,8 @@
           left: 0;
           right: 0;
           height: 1px;
-          background: linear-gradient(90deg, transparent, #60a5fa, transparent);
-          animation: border-glow 4s ease-in-out infinite;
+          background: linear-gradient(90deg, transparent, #60a5fa80, transparent);
+          animation: border-glow 5s ease-in-out infinite;
         }
         .glass-panel::before {
           content: "";
@@ -265,18 +265,18 @@
           left: 0;
           right: 0;
           height: 1px;
-          background: linear-gradient(90deg, transparent, #60a5fa, transparent);
-          animation: border-glow 4s ease-in-out infinite reverse;
+          background: linear-gradient(90deg, transparent, #60a5fa00, transparent);
+          animation: border-glow 5s ease-in-out infinite reverse;
         }
         /* 深色模式下的边框光效 */
         .dark .glass-panel::after {
-          background: linear-gradient(90deg, transparent, #60a5fa, transparent);
+          background: linear-gradient(90deg, transparent, #60a5fa80, transparent);
         }
         .dark .glass-panel::before {
-          background: linear-gradient(90deg, transparent, #60a5fa, transparent);
+          background: linear-gradient(90deg, transparent, #60a5fa00, transparent);
         }
         .dark .glass-panel {
-          background: rgba(17, 24, 39, 0.6);
+          background: rgba(17, 24, 39, 0.75);
           border: 1px solid rgba(255, 255, 255, 0.1);
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
         }
@@ -326,7 +326,7 @@
         background-image: url("background.jpg");
         background-size: cover;
         background-position: center;
-        filter: blur(4px);
+        filter: blur(8px);
         transform: scale(1.1); /* 略微放大以避免边缘出现空白 */
       }
 
@@ -337,7 +337,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #f3f4f6;
+        background-color: #f3f4f680;
         opacity: 0.8;
       }
 
@@ -352,10 +352,10 @@
       }
       @keyframes glow {
         from {
-          box-shadow: 0 0 5px #60a5fa;
+          box-shadow: 0 0 5px #60a5fac4;
         }
         to {
-          box-shadow: 0 0 20px #60a5fa;
+          box-shadow: 0 0 20px #60a5fac4;
         }
       }
       .animate-fade-in {
@@ -413,11 +413,11 @@
         <div class="flex items-center space-x-3">
           <img
             src="https://avatars.githubusercontent.com/u/166911432?v=4"
-            alt="星月_Fox"
+            alt="星月Fox"
             class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-700 shadow-sm"
           />
 
-          <span class="font-bold text-lg">星月_Fox</span>
+          <span class="font-bold text-lg">星月Fox的小窝</span>
         </div>
         <div class="flex items-center space-x-4">
           <!-- 极简模式开关 -->
@@ -461,13 +461,13 @@
             <div class="flex justify-center mb-6">
               <img
                 src="https://avatars.githubusercontent.com/u/166911432?v=4"
-                alt="星月_Fox"
+                alt="星月Fox"
                 class="w-36 h-36 rounded-full border-4 border-white dark:border-gray-700 shadow-lg avatar-glow"
               />
             </div>
             <!-- 基本信息 -->
             <div class="text-center mb-6">
-              <h1 class="text-2xl font-bold mb-2">星月_Fox</h1>
+              <h1 class="text-2xl font-bold mb-2">星月Fox</h1>
               <p class="text-gray-600 dark:text-gray-400 mb-4">
                 密码下周就能想起来
               </p>
@@ -481,7 +481,7 @@
                 访问我的 GitHub
               </a>
             </div>
-            <!-- 统计信息 -->
+            <!-- 统计信息，原浅色面板gray100 dark面板gray700 -->
             <div class="grid grid-cols-2 gap-4">
               <div
                 class="bg-gray-100 dark:bg-gray-700 rounded-xl p-4 text-center"
@@ -491,7 +491,7 @@
                 >
                   3
                 </div>
-                <div class="text-sm text-gray-600 dark:text-gray-400">
+                <div class="text-sm text-gray-700 dark:text-gray-400">
                   总仓库数
                 </div>
               </div>
@@ -503,7 +503,7 @@
                 >
                   0
                 </div>
-                <div class="text-sm text-gray-600 dark:text-gray-400">
+                <div class="text-sm text-gray-700 dark:text-gray-400">
                   总 Stars
                 </div>
               </div>
@@ -558,7 +558,7 @@
             class="glass-panel bg-white/30 dark:bg-gray-800/30 rounded-2xl shadow-xl p-6 readme-content"
           >
             <h2 class="text-2xl font-bold mb-4 flex items-center">
-              Who is 星月_Fox ?
+              Who is 星月Fox ?
             </h2>
             <ul>
               👋你好，我是星月Fox！17岁，是名学牲。对有趣的世界和有趣的你感到好奇，正在尝试服务器与网站搭建与运维相关工作。
@@ -631,7 +631,7 @@
                 <p>/</p>
                 <p>发现有趣的项目并着手部署是我的爱好🥰</p>
               </ul>
-              <h3 id="find-me">🔍在互联网上的存在之地</h3>
+              <h3 id="find-me">🌐在互联网上的存在之地</h3>
               <ul>
                 <li>
                   <a
@@ -788,11 +788,11 @@
       <div
         class="container mx-auto px-4 text-center text-gray-600 dark:text-gray-400"
       >
-        <p>© 2026 星月_Fox.</p>
-        <!--备份<p>© 2026 星月_Fox. 由 Flask + Tailwind CSS 驱动。</p>-->
+        <p>© 2026 星月Fox.</p>
+        <!--备份<p>© 2026 星月Fox. 由 Flask + Tailwind CSS 驱动。</p>-->
         <div class="mt-3 space-x-4">
           <!-- 联系方式图标，仅在配置了有效URL时显示 -->
-
+          <script>
           <a
             href="https://qm.qq.com/q/TCpx54yrqS"
             target="_blank"
@@ -819,6 +819,7 @@
           >
             <i class="fa-brands fa-tiktok"></i>
           </a>
+          </script><!--暂时弃用，此段已被<script>跳过-->
         </div>
       </div>
     </footer>
@@ -916,7 +917,7 @@
             // 恢复背景模糊效果
             if (bgImage) {
               bgImage.style.transition = "filter 0.5s ease";
-              bgImage.style.filter = "blur(4px)";
+              bgImage.style.filter = "blur(8px)";
             }
 
             // 移除极简模式按钮的激活样式
@@ -953,11 +954,11 @@
               datasets: [
                 {
                   label: "能力水平",
-                  data: [60, 30, 30, 10, 75, 50, 90, 90, 100],
+                  data: [64, 30, 24, 10, 72, 50, 74, 90, 100],
                   borderColor: isDark ? "#2575fc" : "#2575fc",
                   backgroundColor: isDark
-                    ? "rgba(96, 165, 250, 0.3)"
-                    : "rgba(96, 165, 250, 0.3)",
+                    ? "rgba(96, 165, 250, 0.4)"
+                    : "rgba(96, 165, 250, 0.4)",
                   tension: 0.4,
                   fill: true,
                 },
@@ -980,8 +981,8 @@
                   beginAtZero: true,
                   grid: {
                     color: isDark
-                      ? "rgba(255, 255, 255, 0.1)"
-                      : "rgba(0, 0, 0, 0.1)",
+                      ? "rgba(255, 255, 255, 0.25)"
+                      : "rgba(0, 0, 0, 0.25)",
                   },
                   ticks: {
                     color: textColor,
